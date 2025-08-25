@@ -67,7 +67,7 @@ For example, you can provide a template as shown below:
 
 ---
 
-## 📊 Structured Data
+## 📊 Structure Data
 
 ```json
 {
