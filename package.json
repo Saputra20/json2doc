@@ -1,6 +1,6 @@
 {
   "name": "@dctrl/json2doc",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Converter JSON to DOC",
   "keywords": [
     "swagger",
@@ -11,7 +11,7 @@
   ],
   "main": "bin/cli.js",
   "bin": {
-    "crudify": "bin/cli.js"
+    "json2doc": "bin/cli.js"
   },
   "publishConfig": {
     "access": "public"
