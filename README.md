@@ -63,8 +63,45 @@ json2doc convert sample.json --platform=swagger --template=custome-template.docx
 Note: If you use the --template option, make sure your template file matches the format expected by json2doc.
 
 For example, you can provide a template as shown below:
-![Preview of sample data](./docs/assets/sample-data.png)
 ![Preview of sample document](./docs/assets/sample-docx.png)
+
+---
+
+## 📊 Structured Data
+
+```json
+{
+  "array": {
+    "module": "Admin",
+    "apis": [
+      {
+        "endpoint": "{baseUrl}/api/v1/admins",
+        "method": "POST",
+        "name": "Create Admin",
+        "description": "Returns admin data",
+        "headers": [
+          {
+            "value": "Authorization is required (ex: authorization: Bearer {token})"
+          }
+        ],
+        "isHeaders": true,
+        "parameters": [],
+        "isParameters": false,
+        "responses": [
+          {
+            "statusCode": "201",
+            "description": "Successful Response",
+            "content": "{\n  \"success\": true,\n  \"code\": 201,\n  \"message\": \"Data created successfully\",\n  \"data\": {\n    \"id\": \"ad42e763-7884-4fc2-83c4-8e61440ac4a4\",\n    \"email\": \"admin1@dispostable.com\",\n    \"password\": \"$2a$10$gIjSA8bKO7bADCANmshDZOHJAO/br7FzJIu4nhgG/zYKP3UD0nc8O\",\n    \"roleId\": 1,\n    \"updatedAt\": \"2024-01-11T03:19:11.248Z\",\n    \"createdAt\": \"2024-01-11T03:19:11.248Z\",\n    \"deletedAt\": null\n  }\n}"
+          },
+        ],
+        "isResponses": true,
+        "body": "{\n  \"name\": \"string\",\n  \"phoneNumber\": \"string\",\n  \"email\": \"string\",\n  \"password\": \"string\",\n  \"roleId\": \"number\",\n  \"status\": \"string\"\n}",
+        "isBody": true
+      },
+    ]
+  }
+}
+```
 
 ---
 
