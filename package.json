@@ -1,11 +1,7 @@
 {
-  "name": "json2doc",
+  "name": "@dctrl/json2doc",
   "version": "1.0.0",
   "description": "Converter JSON to DOC",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "swagger",
     "docx",
@@ -13,6 +9,13 @@
     "postman",
     "generator"
   ],
+  "main": "bin/cli.js",
+  "bin": {
+    "crudify": "bin/cli.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Dctrl",
   "license": "ISC",
   "dependencies": {
