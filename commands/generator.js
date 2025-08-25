@@ -145,8 +145,13 @@ const swagger = async (baseName, options) => {
       }
     }
 
-    const templateFile = "template.docx";
-    const templateDir = "./templates/";
+    let templateFile = "template.docx";
+    let templateDir = "./templates/";
+    if (options.template) {
+      templateFile = options.template;
+      templateDir = path.join(process.cwd());
+    }
+
     await docGeneratorService.generate(
       templateFile,
       { array },
