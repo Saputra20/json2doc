@@ -146,7 +146,7 @@ const swagger = async (baseName, options) => {
     }
 
     let templateFile = "template.docx";
-    let templateDir = path.join(__dirname, "./templates/");
+    let templateDir = path.join(__dirname, "../templates/");
     if (options.template) {
       templateFile = options.template;
       templateDir = path.join(process.cwd());

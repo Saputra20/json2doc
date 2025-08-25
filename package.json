@@ -1,6 +1,6 @@
 {
   "name": "@dctrl/json2doc",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Converter JSON to DOC",
   "keywords": [
     "swagger",
