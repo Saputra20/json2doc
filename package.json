@@ -1,0 +1,25 @@
+{
+  "name": "json2doc",
+  "version": "1.0.0",
+  "description": "Converter JSON to DOC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "swagger",
+    "docx",
+    "json",
+    "postman",
+    "generator"
+  ],
+  "author": "Dctrl",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.6.0",
+    "commander": "^14.0.0",
+    "easy-template-x": "^6.2.1",
+    "log-symbols": "^7.0.1",
+    "ora": "^8.2.0"
+  }
+}
