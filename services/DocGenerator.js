@@ -3,10 +3,11 @@
 const { TemplateHandler } = require("easy-template-x");
 const fs = require("fs");
 const path = require("path");
+const logger = require("../core/logger");
 
 class DocGenerator {
   async generate(template, data, folder, filename) {
-    console.log(path.resolve(folder, template));
+    logger.info(`Prepare template docx: ${path.resolve(folder, template)}`);
     const content = fs.readFileSync(path.resolve(folder, template));
 
     let doc;

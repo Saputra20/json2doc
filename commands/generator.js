@@ -17,9 +17,10 @@ const generator = async (baseName, options) => {
         break;
 
       default:
-        swagger(baseName, options);
+        await swagger(baseName, options);
         break;
     }
+    logger.succeed(`Success convert file: ${options.output}`);
   } catch (error) {
     logger.fail(`Failed to convert files: ${error.message}`);
   }
