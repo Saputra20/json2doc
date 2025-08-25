@@ -12,7 +12,6 @@ const docGeneratorService = require("../services/DocGenerator");
 
 const generator = async (baseName, options) => {
   try {
-    console.log(options)
     switch (options.platform) {
       case "postman":
         break;
@@ -150,7 +149,7 @@ const swagger = async (baseName, options) => {
     const templateDir = "./templates/";
     await docGeneratorService.generate(
       templateFile,
-      { array, name: "test" },
+      { array },
       templateDir,
       targetFilePath
     );

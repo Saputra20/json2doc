@@ -6,13 +6,13 @@ const generator = require("../commands/generator");
 
 program
   .name("sw2docx")
-  .description("Generator for Swagger to DOCX files")
+  .description("Generator for json to DOCX files")
   .version(version);
 
 program
   .command("convert")
   .alias("c")
-  .description("Convert Swagger file to DOCX")
+  .description("Convert json file to DOCX")
   .argument("<input>", "Path to swagger/openapi JSON file")
   .addOption(
     new Option("--platform <platform>", "Target platform").choices([
