@@ -10,13 +10,13 @@
 ## 📦 Installation
 
 ```bash
-npm install -g @dctrl/crudify
+npm install -g @dctrl/json2doc
 ```
 
 > Or use it locally in your project:
 
 ```bash
-npm install --save-dev @dctrl/crudify
+npm install --save-dev @dctrl/json2doc
 ```
 
 ---
