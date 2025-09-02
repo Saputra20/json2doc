@@ -63,7 +63,7 @@ json2doc convert sample.json --platform=swagger --template=custome-template.docx
 Note: If you use the --template option, make sure your template file matches the format expected by json2doc.
 
 For example, you can provide a template as shown below:
-![Preview of sample document](./docs/assets/sample-docx.png)
+![Preview of sample document](https://raw.githubusercontent.com/Saputra20/json2doc/main/docs/assets/sample-docx.png)
 
 ---
 
@@ -107,7 +107,7 @@ For example, you can provide a template as shown below:
 
 ## 📄 Output File
 
-![Preview of sample output](./docs/assets/sample-output.png)
+![Preview of sample output](https://raw.githubusercontent.com/Saputra20/json2doc/main/docs/assets/sample-output.png)
 
 ---
 
